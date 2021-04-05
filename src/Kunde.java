@@ -3,18 +3,18 @@ public class Kunde
 {
     private String name, vorname;
     private ArrayList konten;
-    public Kunde(String n, String v)
+    public Kunde(String n, String v)                    //creates new customer with list for accounts
     {
         name = n;
         vorname = v;
         konten = new ArrayList();
     }
 
-    public void kontoHinzufuegen(Conto neu){
+    public void kontoHinzufuegen(Conto neu){            //adds account to his accountlist
         konten.add(neu);
     }
 
-    void anzeigen(){
+    void anzeigen(){                                    //prints out accounts from his accountlist with his name
         System.out.println("Name: " + name);
         System.out.println("Vorname: " + vorname);
         for (int i = 0; i<100; i++){
