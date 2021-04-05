@@ -24,9 +24,12 @@ public class Kunde
         }
     }
 
-    /*double guthaben(){
-        for (int i = 0; i<100; i++){
-            int guthaben = neu.getStand();
+    double guthaben(){
+        double guthaben = 0;
+        for (int i = 0; i < 100; i++) {
+            Conto k = (Conto) konten.get(i);
+            guthaben += k.getStand();
         }
-    }*/
+        return guthaben;
+    }
 }
