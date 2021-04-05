@@ -16,6 +16,7 @@ public class Bank
     }
 
     public void kontenAnzeigen(){
+        System.out.println("Kontoliste: ");
         for (int i = 0; i < 100; i++) {
             Conto k = (Conto) kontoListe.get(i);
             k.anzeigen();
