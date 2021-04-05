@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Kunde
 {
-    private String name, vorname;
+    String name, vorname;
     private ArrayList konten;
     public Kunde(String n, String v)                    //creates new customer with list for accounts
     {
@@ -19,7 +19,7 @@ public class Kunde
         System.out.println("Vorname: " + vorname);
         for (int i = 0; i<100; i++){
             Conto k = (Conto) konten.get(i);
-            System.out.println("Konto" + i + ": ");
+            System.out.println("Konto" + (i+1) + ": ");
             k.anzeigen();
         }
     }
