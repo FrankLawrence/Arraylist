@@ -24,7 +24,7 @@ public class Kunde
         }
     }
 
-    double guthaben(){
+    double guthaben(){                                  //displays sum of all money in the account of a customer
         double guthaben = 0;
         for (int i = 0; i < 100; i++) {
             Conto k = (Conto) konten.get(i);
