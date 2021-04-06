@@ -1,1 +1,1 @@
-Hey this s
+Hey this is the school project.
