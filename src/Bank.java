@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 public class Bank
 {
-    private ArrayList kontoListe;                    //declares new Arraylist called kontoListe
+    private ArrayList kundeListe;                    //declares new Arraylist called kontoListe
     public Bank(){
-        kontoListe = new ArrayList();               //declares new Arraylist called kontoListe 2.
+        kundeListe = new ArrayList();               //declares new Arraylist called kontoListe 2.
     }
 
-    public void kontoHinzufuegen(Conto neu){        //adds an existing accoutn to the accountlist and prints it out
-        kontoListe.add(neu);
+    public void kundeHinzufuegen(Kunde neu){        //adds an existing accoutn to the accountlist and prints it out
+        kundeListe.add(neu);
         neu.anzeigen();
     }
     
