@@ -12,13 +12,13 @@ public class Bank
     }
     
     public void laengeAnzeigen(){                   //prints size of accounts Arraylist to console
-        System.out.println(kontoListe.size());
+        System.out.println(kundeListe.size());
     }
 
-    public void kontenAnzeigen(){                   //runs through accountlist and prints accounts to the console
-        System.out.println("Kontoliste: ");
+    public void kundenAnzeigen(){                   //runs through accountlist and prints accounts to the console
+        System.out.println("Kundenliste: ");
         for (int i = 0; i < 100; i++) {
-            Conto k = (Conto) kontoListe.get(i);
+            Conto k = (Conto) kundeListe.get(i);
             k.anzeigen();
         }
     }
