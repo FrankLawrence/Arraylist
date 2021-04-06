@@ -24,6 +24,13 @@ public class Kunde
         }
     }
 
+    public void kontenVerzinsen(double zinssatz){
+        for (int i = 0; i < konten.size(); i++) {
+            Conto k = (Conto) konten.get(i);
+            k.verzinsen(zinssatz);
+        }
+    }
+
     double guthaben(){                                  //displays sum of all money in the account of a customer
         double guthaben = 0;
         for (int i = 0; i < 100; i++) {

@@ -23,10 +23,10 @@ public class Bank
         }
     }
     
-    public void kontenVerzinsen(double zinssatz){   //adds interest to accounts from the bank
+    public void kundenVerzinsen(double zinssatz){   //adds interest to accounts from the bank
         for (int i = 0; i < 100; i++) {
-            Conto k = (Conto) kontoListe.get(i);
-            k.verzinsen(zinssatz);
+            Kunde k = (Kunde) kundeListe.get(i);
+            k.kontenVerzinsen(zinssatz);
         }
     }
 }
